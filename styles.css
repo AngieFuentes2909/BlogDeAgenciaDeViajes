@@ -159,10 +159,10 @@ main {
 
 .section-heading {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .section-heading h2,
@@ -180,52 +180,68 @@ main {
   font-size: 0.9rem;
 }
 
-.destination-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25rem;
+.destination-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.destination-card {
-  overflow: hidden;
+.article-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
   border: 1px solid var(--border);
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   background: var(--white);
   box-shadow: var(--shadow);
+  overflow: hidden;
   transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.destination-card:hover {
+.article-container:hover {
   border-color: rgba(23, 185, 120, 0.45);
   box-shadow: 0 14px 28px rgba(30, 61, 89, 0.12);
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
-.destination-card img {
+.article-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.article-container .card-content {
+  flex: 1 1 50%;
+  padding: 2.5rem;
+}
+
+.article-container .card-image {
+  flex: 1 1 50%;
+  height: 100%;
+}
+
+.article-container .card-image img {
   width: 100%;
-  height: 14rem;
+  height: 100%;
+  min-height: 280px;
   object-fit: cover;
 }
 
-.card-content {
-  padding: 1.25rem;
-}
-
 .card-content h3 {
-  margin: 0.3rem 0 0.5rem;
+  margin: 0.3rem 0 0.75rem;
   color: var(--blue);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .card-content p:not(.card-location) {
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.25rem;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.95rem;
 }
 
 .card-content a {
   color: var(--green-dark);
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -267,9 +283,18 @@ footer strong {
   font-size: 1rem;
 }
 
-@media (max-width: 950px) {
-  .destination-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (max-width: 768px) {
+  .article-container,
+  .article-container:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .article-container .card-content {
+    padding: 1.5rem;
+  }
+
+  .article-container .card-image img {
+    min-height: 200px;
   }
 }
 
@@ -305,14 +330,10 @@ footer strong {
     margin-top: 0.75rem;
   }
 
-  .destination-grid {
-    grid-template-columns: 1fr;
+  .about {
+    margin-bottom: 3.5rem;
   }
-
-  .destination-card img {
-    height: 15rem;
-  }
-
+}
   .about {
     margin-bottom: 3.5rem;
   }
