@@ -2,8 +2,8 @@
 
 ## Integrantes
 
-* Jesus Lopez
-* Miguel Quintero
-* Johan Gonzalez  
-* Cristian Valencia
-* Angie Fuentes
+* Jesus Lopez   ------------ Desarrollador
+* Miguel Quintero -------------- Product owner
+* Johan Gonzalez   ------------- Desarrollador
+* Cristian Valencia ------------- Desarrollador
+* Angie Fuentes---------------- Scrum master
