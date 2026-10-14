@@ -6,3 +6,4 @@
 * Miguel Quintero
 * Johan Gonzalez  
 * Cristian Valencia
+* Angie Fuentes
