@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre lugares turísticos de Colombia y planea tu próxima aventura."
+    />
+    <title>Colombia Viajera | Inicio</title>
+
+    <!-- La hoja de estilos se agregará en un commit posterior. -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav aria-label="Navegación principal">
+        <a class="logo" href="index.html">Colombia Viajera</a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Explora, descubre y disfruta</p>
+        <h1 id="hero-title">Colombia te espera</h1>
+        <p>
+          Encuentra destinos inolvidables, conoce nuevas culturas y prepara tu
+          próxima aventura por los paisajes más representativos de Colombia.
+        </p>
+        <a class="button" href="#destinos">Explorar destinos</a>
+      </section>
+
+      <section id="destinos" class="destinations" aria-labelledby="destinations-title">
+        <div class="section-heading">
+          <p class="eyebrow">Destinos destacados</p>
+          <h2 id="destinations-title">Lugares para comenzar tu viaje</h2>
+          <p>
+            Una selección inicial de ciudades colombianas que combinan historia,
+            naturaleza, gastronomía y experiencias únicas.
+          </p>
+        </div>
+
+        <div class="destination-grid">
+          <article class="destination-card">
+            <img
+              src="https://images.unsplash.com/photo-1598970605070-a38a6ccd3d2d?auto=format&fit=crop&w=900&q=80"
+              alt="Vista panorámica de Medellín entre montañas"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <p class="card-location">Antioquia</p>
+              <h3>Medellín</h3>
+              <p>
+                Recorre la ciudad de la eterna primavera, sus barrios llenos de
+                arte y sus espacios naturales.
+              </p>
+              <a href="#contacto">Conocer más</a>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img
+              src="https://images.unsplash.com/photo-1583531352515-888e8f6f9e9a?auto=format&fit=crop&w=900&q=80"
+              alt="Paisaje natural del Parque Arví en Medellín"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <p class="card-location">Antioquia</p>
+              <h3>Parque Arví</h3>
+              <p>
+                Respira aire puro, recorre sus senderos ecológicos y disfruta la
+                naturaleza en las montañas de Medellín.
+              </p>
+              <a href="#contacto">Conocer más</a>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img
+              src="https://images.unsplash.com/photo-1533630661420-1c4d5c1a4d3d?auto=format&fit=crop&w=900&q=80"
+              alt="Cerro de Monserrate en Bogotá"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <p class="card-location">Cundinamarca</p>
+              <h3>Bogotá</h3>
+              <p>
+                Vive la cultura capitalina, visita La Candelaria y contempla la
+                ciudad desde el cerro de Monserrate.
+              </p>
+              <a href="#contacto">Conocer más</a>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img
+              src="https://images.unsplash.com/photo-1568632234157-ce7aecd04d0d?auto=format&fit=crop&w=900&q=80"
+              alt="Carnaval y arquitectura colorida de Barranquilla"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <p class="card-location">Atlántico</p>
+              <h3>Barranquilla</h3>
+              <p>
+                Siente la alegría del Caribe, descubre su gastronomía y conoce
+                la ciudad que celebra uno de los carnavales más importantes.
+              </p>
+              <a href="#contacto">Conocer más</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="nosotros" class="about" aria-labelledby="about-title">
+        <h2 id="about-title">Viajar también es conectar</h2>
+        <p>
+          Colombia Viajera nace para compartir recomendaciones sencillas y
+          acercarte a la diversidad de cada región del país.
+        </p>
+      </section>
+    </main>
+
+    <footer id="contacto">
+      <p><strong>Colombia Viajera</strong></p>
+      <p>Autores: Jesús, Johan y Cristian</p>
+      <p>Soporte: soporte@colombiaviajera.com</p>
+      <p>&copy; 2026 Colombia Viajera. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- aqui la conexion con javascript chicos -->
+    <script src="app.js" defer></script>
+  </body>
+</html>
