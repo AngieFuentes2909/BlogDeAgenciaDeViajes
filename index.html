@@ -8,18 +8,16 @@
       content="Descubre lugares turísticos de Colombia y planea tu próxima aventura."
     />
     <title>Colombia Viajera | Inicio</title>
-
-    <!-- La hoja de estilos se agregará en un commit posterior. -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="estilos.css" />
   </head>
 
   <body>
     <header>
       <nav aria-label="Navegación principal">
-        <a class="logo" href="index.html">Colombia Viajera</a>
+        <a class="logo" href="índice.html">Colombia Viajera</a>
 
         <ul class="nav-links">
-          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="índice.html" aria-current="page">Inicio</a></li>
           <li><a href="#destinos">Destinos</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#contacto">Contacto</a></li>
@@ -48,77 +46,70 @@
           </p>
         </div>
 
-        <div class="destination-grid">
-          <article class="destination-card">
-            <img
-              src="assets/vista-de-medellin-entre-montañas.webp"
-              alt="Vista panorámica de Medellín entre montañas"
-              loading="lazy"
-            />
-            <div class="card-content">
-              <p class="card-location">Antioquia</p>
-              <h3>Medellín</h3>
-              <p>
-                Recorre la ciudad de la eterna primavera, sus barrios llenos de
-                arte y sus espacios naturales.
-              </p>
-              <a href="#contacto">Conocer más</a>
-            </div>
-          </article>
-
-          <article class="destination-card">
-            <img
-              src="assets/parque-arvi-medellin.webp"
-              alt="Paisaje natural del Parque Arví en Medellín"
-              loading="lazy"
-            />
+        <div class="destination-list">
+          <!-- Destino 1: Parque Arví -->
+          <article class="destination-card article-container">
             <div class="card-content">
               <p class="card-location">Antioquia</p>
               <h3>Parque Arví</h3>
               <p>
                 Respira aire puro, recorre sus senderos ecológicos y disfruta la
-                naturaleza en las montañas de Medellín.
+                naturaleza y el ecoturismo en las montañas de Medellín.
               </p>
-              <a href="#contacto">Conocer más</a>
+              <a href="#contacto">Conocer más &rarr;</a>
+            </div>
+            <div class="card-image">
+              <img
+                src="activos/parque-arvi-medellin.webp"
+                alt="Paisaje natural del Parque Arví en Medellín"
+                loading="lazy"
+              />
             </div>
           </article>
 
-          <article class="destination-card">
-            <img
-              src="assets/cerro-monserrate-bogota.webp"
-              alt="Cerro de Monserrate en Bogotá"
-              loading="lazy"
-            />
+          <!-- Destino 2: Monserrate Bogotá -->
+          <article class="destination-card article-container">
             <div class="card-content">
               <p class="card-location">Cundinamarca</p>
               <h3>Bogotá</h3>
               <p>
                 Vive la cultura capitalina, visita La Candelaria y contempla la
-                ciudad desde el cerro de Monserrate.
+                ciudad y su arquitectura desde el histórico cerro de Monserrate.
               </p>
-              <a href="#contacto">Conocer más</a>
+              <a href="#contacto">Conocer más &rarr;</a>
+            </div>
+            <div class="card-image">
+              <img
+                src="activos/cerro-monserrate-bogota.webp"
+                alt="Cerro de Monserrate en Bogotá"
+                loading="lazy"
+              />
             </div>
           </article>
 
-          <article class="destination-card">
-            <img
-              src="assets/carnaval-barranquilla.webp"
-              alt="Carnaval y arquitectura colorida de Barranquilla"
-              loading="lazy"
-            />
+          <!-- Destino 3: Carnaval Barranquilla -->
+          <article class="destination-card article-container">
             <div class="card-content">
               <p class="card-location">Atlántico</p>
               <h3>Barranquilla</h3>
               <p>
-                Siente la alegría del Caribe, descubre su gastronomía y conoce
-                la ciudad que celebra uno de los carnavales más importantes.
+                Siente la alegría del Caribe, descubre su exquisita gastronomía y conoce
+                la ciudad que celebra uno de los carnavales más importantes del mundo.
               </p>
-              <a href="#contacto">Conocer más</a>
+              <a href="#contacto">Conocer más &rarr;</a>
+            </div>
+            <div class="card-image">
+              <img
+                src="activos/carnaval-barranquilla.webp"
+                alt="Carnaval y arquitectura colorida de Barranquilla"
+                loading="lazy"
+              />
             </div>
           </article>
         </div>
       </section>
-      <!-- Cristian Valencia -->
+
+      <!-- Sección Nosotros -->
       <section id="nosotros" class="about" aria-labelledby="about-title">
         <h2 id="about-title">Viajar también es conectar</h2>
         <p>
@@ -127,21 +118,18 @@
           complicaciones. Queremos compartir recomendaciones prácticas, consejos
           locales y rutas sencillas que te permitan descubrir la inmensa diversidad
           natural, cultural y gastronómica de cada región de nuestro país.
-          Ya sea que busques el encanto colonial de un pueblo patrimonio, la calidez de
-          nuestras playas, la majestuosidad de los Andes o el aliento de la Amazonía, en
-          Colombia Viajera te acercamos a cada rincón para que vivas experiencias
-          memorables y te enamores aún más de esta tierra.
         </p>
       </section>
     </main>
 
-        <footer id="contacto">
+    <footer id="contacto">
       <p><strong>Colombia Viajera</strong></p>
       <p>Autores: Jesús, Johan, Cristian, Miguel y Angie</p>
       <p>Soporte: soporte@colombiaviajera.com</p>
       <p>&copy; 2026 Colombia Viajera. Todos los derechos reservados.</p>
     </footer>
-    <!-- aqui la conexion con javascript chicos -->
+
+    <!-- Conexion con javascript -->
     <script src="app.js" defer></script>
   </body>
 </html>
