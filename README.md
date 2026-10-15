@@ -7,3 +7,5 @@
 * Johan Gonzalez   ------------- Desarrollador
 * Cristian Valencia ------------- Desarrollador
 * Angie Fuentes---------------- Scrum master
+
+https://angiefuentes2909.github.io/blog-digital-agenciaa/
