@@ -37,34 +37,7 @@ a {
   color: inherit;
 }
 
-/* Navbar & Header (Bootstrap) */
-.navbar {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.95) !important;
-  border-bottom: 1px solid var(--border);
-}
 
-.navbar-brand {
-  letter-spacing: -0.3px;
-}
-
-.nav-link {
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.nav-link:hover {
-  color: var(--green-dark) !important;
-}
-
-/* Footer Styling Enhancements */
-footer a {
-  transition: color 0.2s ease, opacity 0.2s ease;
-}
-
-footer a:hover {
-  color: var(--green) !important;
-}
 
 main {
   overflow: hidden;
