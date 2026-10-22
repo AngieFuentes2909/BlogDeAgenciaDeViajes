@@ -17,16 +17,48 @@
   </head>
 
   <body>
-    <header>
-      <nav aria-label="Navegación principal">
-        <a class="logo" href="index.html">Colombia Viajera</a>
+    <header class="sticky-top shadow-sm">
+      <nav class="navbar navbar-expand-lg bg-white py-3" aria-label="Navegación principal">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-dark fs-4" href="index.html">
+            <i class="bi bi-compass-fill text-success fs-3"></i>
+            <span>Colombia <span class="text-success">Viajera</span></span>
+          </a>
 
-        <ul class="nav-links">
-          <li><a href="index.html" aria-current="page">Inicio</a></li>
-          <li><a href="#destinos">Destinos</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContenido"
+            aria-controls="navbarContenido"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContenido">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 my-2 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-medium px-3 text-success" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-medium px-3 text-secondary" href="#destinos">Destinos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-medium px-3 text-secondary" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-medium px-3 text-secondary" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item ms-lg-2">
+                <a class="btn btn-success rounded-pill px-4 shadow-sm" href="#destinos">
+                  <i class="bi bi-airplane-fill me-1"></i> Explorar
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -127,11 +159,61 @@
       </section>
     </main>
 
-    <footer id="contacto">
-      <p><strong>Colombia Viajera</strong></p>
-      <p>Autores: Jesús, Johan, Cristian, Miguel y Angie</p>
-      <p>Soporte: soporte@colombiaviajera.com</p>
-      <p>&copy; 2026 Colombia Viajera. Todos los derechos reservados.</p>
+    <footer id="contacto" class="bg-dark text-light pt-5 pb-4 mt-5">
+      <div class="container">
+        <div class="row g-4 justify-content-between">
+          <!-- Columna 1: Marca y descripción -->
+          <div class="col-12 col-md-5 col-lg-4">
+            <a class="d-flex align-items-center gap-2 fw-bold text-white fs-4 text-decoration-none mb-3" href="index.html">
+              <i class="bi bi-compass-fill text-success fs-3"></i>
+              <span>Colombia <span class="text-success">Viajera</span></span>
+            </a>
+            <p class="text-secondary small">
+              Inspirando a viajeros a descubrir la inmensa diversidad natural,
+              cultural y gastronómica de Colombia de forma auténtica y accesible.
+            </p>
+            <div class="d-flex gap-3 fs-5 mt-3">
+              <a href="#" class="text-secondary text-decoration-none" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-secondary text-decoration-none" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-secondary text-decoration-none" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+              <a href="#" class="text-secondary text-decoration-none" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Columna 2: Navegación rápida -->
+          <div class="col-6 col-md-3 col-lg-3">
+            <h5 class="text-white fw-semibold mb-3 fs-6">Navegación</h5>
+            <ul class="list-unstyled d-flex flex-column gap-2 small">
+              <li><a href="index.html" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right text-success me-1"></i> Inicio</a></li>
+              <li><a href="#destinos" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right text-success me-1"></i> Destinos</a></li>
+              <li><a href="#nosotros" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right text-success me-1"></i> Nosotros</a></li>
+              <li><a href="#contacto" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right text-success me-1"></i> Contacto y Soporte</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Créditos del equipo y contacto -->
+          <div class="col-12 col-md-4 col-lg-4">
+            <h5 class="text-white fw-semibold mb-3 fs-6">Equipo & Contacto</h5>
+            <p class="text-secondary small mb-2">
+              <i class="bi bi-envelope-fill text-success me-2"></i> soporte@colombiaviajera.com
+            </p>
+            <p class="text-secondary small mb-3">
+              <i class="bi bi-geo-alt-fill text-success me-2"></i> Colombia
+            </p>
+            <div class="p-3 rounded bg-secondary bg-opacity-10 border border-secondary border-opacity-25 small text-secondary">
+              <p class="fw-bold text-white mb-1"><i class="bi bi-people-fill text-success me-1"></i> Equipo GenCh15:</p>
+              <p class="mb-0">Jesús López, Johan González, Cristian Valencia, Miguel Quintero y Angie Fuentes (Scrum Master).</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-secondary opacity-25 my-4" />
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-secondary">
+          <p class="mb-0">&copy; 2026 Colombia Viajera. Todos los derechos reservados.</p>
+          <p class="mb-0">Hecho con <i class="bi bi-heart-fill text-danger"></i> y Bootstrap 5</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Bootstrap 5 JS Bundle -->
