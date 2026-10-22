@@ -158,19 +158,130 @@
     </section>
   </main>
 
-  <footer id="contacto">
-    <p><strong>Colombia Viajera</strong></p>
-    <p>Autores: Jesús, Johan, Cristian, Miguel y Angie</p>
-    <p>Soporte: soporte@colombiaviajera.com</p>
-    <p>&copy; 2026 Colombia Viajera. Todos los derechos reservados.</p>
-  </footer>
+      <!-- Sección Nosotros -->
+      <section id="nosotros" class="about" aria-labelledby="about-title">
+        <h2 id="about-title">Viajar también es conectar</h2>
+        <p>
+          Colombia Viajera nace con la pasión y el propósito de inspirar a las personas a
+          explorar nuestro territorio de una forma auténtica, accesible y sin
+          complicaciones. Queremos compartir recomendaciones prácticas, consejos
+          locales y rutas sencillas que te permitan descubrir la inmensa diversidad
+          natural, cultural y gastronómica de cada región de nuestro país.
+        </p>
+      </section>
 
-  <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <!-- Conexion con javascript -->
-  <script src="app.js" defer></script>
-</body>
+      <!-- Esto lo modifiqué yo, Jesús, formulario de contacto. -->
+      <section id="contacto" class="container py-5" aria-labelledby="contact-title">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="text-center mb-4">
+              <p class="eyebrow">Planea tu próxima aventura</p>
+              <h2 id="contact-title" class="h2">Contáctanos</h2>
+              <p class="text-muted">
+                Cuéntanos qué viaje tienes en mente y te ayudaremos a encontrar
+                información para comenzar a planearlo.
+              </p>
+            </div>
 
+            <form>
+              <div class="mb-3">
+                <label for="contact-name" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contact-name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contact-email" class="form-label">Correo electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contact-email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contact-destination" class="form-label">
+                  Destino de interés
+                </label>
+                <select
+                  class="form-select"
+                  id="contact-destination"
+                  name="destination"
+                  required
+                >
+                  <option value="" selected disabled>Elige un destino</option>
+                  <option value="parque-arvi">Parque Arví</option>
+                  <option value="bogota">Bogotá</option>
+                  <option value="barranquilla">Barranquilla</option>
+                  <option value="otro">Otro destino</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="contact-message" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="contact-message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>Colombia Viajera</strong></p>
+      <p>Autores: Jesús, Johan, Cristian, Miguel y Angie</p>
+      <p>Soporte: soporte@colombiaviajera.com</p>
+      <p>&copy; 2026 Colombia Viajera. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Esto lo modifiqué yo, Jesús, modal reutilizable para los destinos. -->
+    <div
+      class="modal fade"
+      id="destinationModal"
+      tabindex="-1"
+      aria-labelledby="destinationModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="destinationModalTitle"></h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img id="destinationModalImage" class="destination-modal-image mb-3" src="" alt="" />
+            <p id="destinationModalDescription" class="mb-0"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Conexion con javascript -->
+    <script src="app.js" defer></script>
+  </body>
 </html>
