@@ -257,14 +257,6 @@ footer strong {
   font-size: 1rem;
 }
 
-/* Esto lo modifiqué yo, Jesús, estilo de la imagen dentro del modal. */
-.destination-modal-image {
-  width: 100%;
-  max-height: 360px;
-  border-radius: 0.5rem;
-  object-fit: cover;
-}
-
 @media (max-width: 768px) {
   .article-container,
   .article-container:nth-child(even) {
@@ -315,4 +307,13 @@ footer strong {
   .about {
     margin-bottom: 3.5rem;
   }
+}
+/* Animación suave para tarjetas de destinos (Johan) */
+.destination-card-modern {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.destination-card-modern:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
 }
