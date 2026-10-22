@@ -3,9 +3,9 @@
 ## Integrantes
 
 * Jesus Lopez   ------------ Desarrollador
-* Miguel Quintero -------------- Product owner
+* Miguel Quintero -------------- Desarrollador
 * Johan Gonzalez   ------------- Desarrollador
 * Cristian Valencia ------------- Desarrollador
-* Angie Fuentes---------------- Scrum master
+* Angie Fuentes---------------- Scrum master-Product owner
 
-https://angiefuentes2909.github.io/blog-digital-agenciaa/
+Deploy: https://angiefuentes2909.github.io/BlogDeAgenciaDeViajes/

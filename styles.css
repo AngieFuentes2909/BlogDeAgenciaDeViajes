@@ -263,6 +263,14 @@ footer strong {
   font-size: 1rem;
 }
 
+/* Esto lo modifiqué yo, Jesús, estilo de la imagen dentro del modal. */
+.destination-modal-image {
+  width: 100%;
+  max-height: 360px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .article-container,
   .article-container:nth-child(even) {
