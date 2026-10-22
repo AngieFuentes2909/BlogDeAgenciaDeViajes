@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --green: #17b978;
+  --green-dark: #0d8f5c;
+  --blue: #1e3d59;
+  --text: #333333;
+  --muted: #6d7478;
+  --cream: #f9f9f9;
+  --white: #ffffff;
+  --border: #e7eceb;
+  --shadow: 0 8px 24px rgba(30, 61, 89, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: min(1180px, calc(100% - 3rem));
+  min-height: 4.5rem;
+  margin: 0 auto;
+}
+
+.logo {
+  color: var(--blue);
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible,
+.nav-links a[aria-current="page"] {
+  color: var(--green-dark);
+}
+
+main {
+  overflow: hidden;
+}
+
+.hero {
+  width: min(1180px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 5.5rem 0 4.5rem;
+  text-align: center;
+}
+
+.hero > * {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero h1 {
+  margin-top: 0.35rem;
+  margin-bottom: 1rem;
+  color: var(--blue);
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1.1;
+}
+
+.hero p:not(.eyebrow) {
+  margin-bottom: 1.75rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.eyebrow,
+.card-location {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--green);
+  border-radius: 999px;
+  background: var(--green);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: var(--green-dark);
+  box-shadow: 0 6px 14px rgba(23, 185, 120, 0.22);
+  transform: translateY(-2px);
+}
+
+.destinations,
+.about {
+  width: min(1180px, calc(100% - 3rem));
+  margin: 0 auto;
+}
+
+.destinations {
+  padding: 1rem 0 5rem;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-heading h2,
+.about h2 {
+  margin: 0.35rem 0 0;
+  color: var(--blue);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.section-heading > p:last-child {
+  max-width: 370px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.destination-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.article-container:hover {
+  border-color: rgba(23, 185, 120, 0.45);
+  box-shadow: 0 14px 28px rgba(30, 61, 89, 0.12);
+  transform: translateY(-3px);
+}
+
+.article-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.article-container .card-content {
+  flex: 1 1 50%;
+  padding: 2.5rem;
+}
+
+.article-container .card-image {
+  flex: 1 1 50%;
+  height: 100%;
+}
+
+.article-container .card-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
+.card-content h3 {
+  margin: 0.3rem 0 0.75rem;
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+
+.card-content p:not(.card-location) {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.card-content a {
+  color: var(--green-dark);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-content a:hover,
+.card-content a:focus-visible {
+  text-decoration: underline;
+}
+
+.about {
+  margin-bottom: 5rem;
+  padding: 3rem 1.5rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0.75rem auto 0;
+  color: var(--muted);
+}
+
+footer {
+  padding: 2.25rem 1.5rem;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+}
+
+footer p {
+  margin: 0.3rem 0;
+  font-size: 0.85rem;
+}
+
+footer strong {
+  color: var(--blue);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .article-container,
+  .article-container:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .article-container .card-content {
+    padding: 1.5rem;
+  }
+
+  .article-container .card-image img {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 5.5rem;
+    padding: 0.75rem 0;
+  }
+
+  .nav-links {
+    gap: 0.65rem 1rem;
+  }
+
+  .hero,
+  .destinations,
+  .about {
+    width: min(100% - 2rem, 1180px);
+  }
+
+  .hero {
+    padding: 4rem 0 3.5rem;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading > p:last-child {
+    margin-top: 0.75rem;
+  }
+
+  .about {
+    margin-bottom: 3.5rem;
+  }
+}
+/* Animación suave para tarjetas de destinos (Johan) */
+.destination-card-modern {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.destination-card-modern:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
