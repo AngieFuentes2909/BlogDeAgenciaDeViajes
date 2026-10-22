@@ -1,349 +1,302 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Descubre lugares turísticos de Colombia y planea tu próxima aventura."
-    />
-    <title>Colombia Viajera | Inicio</title>
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <!-- Navbar (Angie - feature/navbar-footer) -->
-    <nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Colombia Viajera</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContenido"
-          aria-controls="navbarContenido"
-          aria-expanded="false"
-          aria-label="Abrir navegación"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarContenido">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#destinos">Destinos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#nosotros">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descubre lugares turísticos de Colombia y planea tu próxima aventura." />
+  <title>Colombia Viajera | Inicio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navbar (Angie - feature/navbar-footer) -->
+  <nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Colombia Viajera</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido"
+        aria-controls="navbarContenido" aria-expanded="false" aria-label="Abrir navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContenido">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destinos">Destinos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section (Cristian - feature/hero-nosotros) -->
+    <section class="hero container text-center py-5" aria-labelledby="hero-title">
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-lg-10">
+          <p class="eyebrow">Explora, descubre y disfruta</p>
+          <h1 id="hero-title" class="display-4 fw-bold">Colombia te espera</h1>
+          <p class="lead text-muted mb-4">
+            Encuentra destinos inolvidables, conoce nuevas culturas y prepara tu
+            próxima aventura por los paisajes más representativos de Colombia.
+          </p>
+          <a class="btn btn-success btn-lg shadow-sm" href="#destinos">Explorar destinos</a>
         </div>
       </div>
-    </nav>
+    </section>
 
-    <main>
-      <!-- Hero Section (Cristian - feature/hero-nosotros) -->
-      <section class="hero container text-center py-5" aria-labelledby="hero-title">
-        <div class="row g-4 justify-content-center">
-          <div class="col-12 col-lg-10">
-            <p class="eyebrow">Explora, descubre y disfruta</p>
-            <h1 id="hero-title" class="display-4 fw-bold">Colombia te espera</h1>
-            <p class="lead text-muted mb-4">
-              Encuentra destinos inolvidables, conoce nuevas culturas y prepara tu
-              próxima aventura por los paisajes más representativos de Colombia.
-            </p>
-            <a class="btn btn-success btn-lg shadow-sm" href="#destinos">Explorar destinos</a>
+    <!-- Sección Destinos (Johan - feature/destinos-cards) -->
+    <section id="destinos" class="py-5 bg-light" aria-labelledby="destinations-title">
+      <div class="container py-lg-4">
+        <!-- Encabezado de la sección -->
+        <div class="row align-items-end justify-content-between mb-5 g-3">
+          <div class="col-12 col-md-8">
+            <span
+              class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill text-uppercase fw-semibold mb-2">
+              Destinos destacados
+            </span>
+            <h2 id="destinations-title" class="display-6 fw-bold mb-0 text-dark">
+              Lugares para comenzar tu viaje
+            </h2>
           </div>
-        </div>
-      </section>
-
-      <!-- Sección Destinos (Johan - feature/destinos-cards) -->
-      <section id="destinos" class="py-5 bg-light" aria-labelledby="destinations-title">
-        <div class="container py-lg-4">
-          <!-- Encabezado de la sección -->
-          <div class="row align-items-end justify-content-between mb-5 g-3">
-            <div class="col-12 col-md-8">
-              <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill text-uppercase fw-semibold mb-2">
-                Destinos destacados
-              </span>
-              <h2 id="destinations-title" class="display-6 fw-bold mb-0 text-dark">
-                Lugares para comenzar tu viaje
-              </h2>
-            </div>
-            <div class="col-12 col-md-4">
-              <p class="text-secondary mb-0">
-                Una selección de ciudades colombianas que combinan historia, naturaleza y cultura.
-              </p>
-            </div>
-          </div>
-
-          <!-- Grilla de tarjetas (1 col en móvil, 2 en tablet, 3 en escritorio) -->
-          <div class="row g-4">
-            <!-- Tarjeta 1: Parque Arví -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden destination-card-modern">
-                <div class="position-relative" style="height: 240px;">
-                  <img
-                    src="assets/parque-arvi-medellin.webp"
-                    class="card-img-top w-100 h-100 object-fit-cover"
-                    alt="Paisaje natural del Parque Arví en Medellín"
-                    loading="lazy"
-                  />
-                  <span class="badge bg-success position-absolute top-0 start-0 m-3 shadow-sm px-3 py-2 rounded-pill">
-                    Antioquia
-                  </span>
-                </div>
-                <div class="card-body d-flex flex-column p-4">
-                  <h3 class="card-title h4 fw-bold mb-2">Parque Arví</h3>
-                  <p class="card-text text-muted flex-grow-1">
-                    Respira aire puro, recorre sus senderos ecológicos y disfruta la naturaleza y el ecoturismo en las montañas de Medellín.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-outline-success rounded-pill fw-semibold mt-3 py-2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#destinationModal"
-                    data-destination="Parque Arví"
-                    data-description="Respira aire puro, recorre sus senderos ecológicos y disfruta la naturaleza y el ecoturismo en las montañas de Medellín."
-                    data-image="assets/parque-arvi-medellin.webp"
-                  >
-                    Conocer más &rarr;
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tarjeta 2: Cerro de Monserrate -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden destination-card-modern">
-                <div class="position-relative" style="height: 240px;">
-                  <img
-                    src="assets/cerro-monserrate-bogota.webp"
-                    class="card-img-top w-100 h-100 object-fit-cover"
-                    alt="Cerro de Monserrate en Bogotá"
-                    loading="lazy"
-                  />
-                  <span class="badge bg-success position-absolute top-0 start-0 m-3 shadow-sm px-3 py-2 rounded-pill">
-                    Cundinamarca
-                  </span>
-                </div>
-                <div class="card-body d-flex flex-column p-4">
-                  <h3 class="card-title h4 fw-bold mb-2">Bogotá</h3>
-                  <p class="card-text text-muted flex-grow-1">
-                    Vive la cultura capitalina, visita La Candelaria y contempla la ciudad y su arquitectura desde el histórico cerro de Monserrate.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-outline-success rounded-pill fw-semibold mt-3 py-2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#destinationModal"
-                    data-destination="Bogotá"
-                    data-description="Vive la cultura capitalina, visita La Candelaria y contempla la ciudad y su arquitectura desde el histórico cerro de Monserrate."
-                    data-image="assets/cerro-monserrate-bogota.webp"
-                  >
-                    Conocer más &rarr;
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tarjeta 3: Barranquilla -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden destination-card-modern">
-                <div class="position-relative" style="height: 240px;">
-                  <img
-                    src="assets/carnaval-barranquilla.webp"
-                    class="card-img-top w-100 h-100 object-fit-cover"
-                    alt="Carnaval y arquitectura colorida de Barranquilla"
-                    loading="lazy"
-                  />
-                  <span class="badge bg-success position-absolute top-0 start-0 m-3 shadow-sm px-3 py-2 rounded-pill">
-                    Atlántico
-                  </span>
-                </div>
-                <div class="card-body d-flex flex-column p-4">
-                  <h3 class="card-title h4 fw-bold mb-2">Barranquilla</h3>
-                  <p class="card-text text-muted flex-grow-1">
-                    Siente la alegría del Caribe, descubre su exquisita gastronomía y conoce la ciudad que celebra uno de los carnavales más importantes del mundo.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-outline-success rounded-pill fw-semibold mt-3 py-2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#destinationModal"
-                    data-destination="Barranquilla"
-                    data-description="Siente la alegría del Caribe, descubre su exquisita gastronomía y conoce la ciudad que celebra uno de los carnavales más importantes del mundo."
-                    data-image="assets/carnaval-barranquilla.webp"
-                  >
-                    Conocer más &rarr;
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sección Nosotros (Cristian) -->
-      <section id="nosotros" class="about container py-5" aria-labelledby="about-title">
-        <div class="row justify-content-center text-center">
-          <div class="col-12 col-lg-8">
-            <h2 id="about-title" class="display-6 fw-bold mb-3">Viajar también es conectar</h2>
-            <p class="lead text-muted">
-              Colombia Viajera nace con la pasión y el propósito de inspirar a las personas a
-              explorar nuestro territorio de una forma auténtica, accesible y sin
-              complicaciones. Queremos compartir recomendaciones prácticas, consejos
-              locales y rutas sencillas que te permitan descubrir la inmensa diversidad
-              natural, cultural y gastronómica de cada región de nuestro país.
+          <div class="col-12 col-md-4">
+            <p class="text-secondary mb-0">
+              Una selección de ciudades colombianas que combinan historia, naturaleza y cultura.
             </p>
           </div>
         </div>
-      </section>
 
-      <!-- Formulario de Contacto (Jesús - feature/contacto-modal) -->
-      <section id="contacto" class="container py-5 border-top" aria-labelledby="contact-title">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-8">
-            <div class="text-center mb-4">
-              <p class="eyebrow">Planea tu próxima aventura</p>
-              <h2 id="contact-title" class="display-6 fw-bold">Contáctanos</h2>
-              <p class="text-muted">
-                Cuéntanos qué viaje tienes en mente y te ayudaremos a encontrar
-                información para comenzar a planearlo.
-              </p>
+        <!-- Grilla de tarjetas (1 col en móvil, 2 en tablet, 3 en escritorio) -->
+        <div class="row g-4">
+          <!-- Tarjeta 1: Parque Arví -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden destination-card-modern">
+              <div class="position-relative" style="height: 240px;">
+                <img src="assets/parque-arvi-medellin.webp" class="card-img-top w-100 h-100 object-fit-cover"
+                  alt="Paisaje natural del Parque Arví en Medellín" loading="lazy" />
+                <span class="badge bg-success position-absolute top-0 start-0 m-3 shadow-sm px-3 py-2 rounded-pill">
+                  Antioquia
+                </span>
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <h3 class="card-title h4 fw-bold mb-2">Parque Arví</h3>
+                <p class="card-text text-muted flex-grow-1">
+                  Respira aire puro, recorre sus senderos ecológicos y disfruta la naturaleza y el ecoturismo en las
+                  montañas de Medellín.
+                </p>
+                <button type="button" class="btn btn-outline-success rounded-pill fw-semibold mt-3 py-2"
+                  data-bs-toggle="modal" data-bs-target="#destinationModal" data-destination="Parque Arví"
+                  data-description="Respira aire puro, recorre sus senderos ecológicos y disfruta la naturaleza y el ecoturismo en las montañas de Medellín."
+                  data-image="assets/parque-arvi-medellin.webp">
+                  Conocer más &rarr;
+                </button>
+              </div>
             </div>
+          </div>
 
-            <form>
-              <div class="mb-3">
-                <label for="contact-name" class="form-label">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="contact-name"
-                  name="name"
-                  autocomplete="name"
-                  required
-                />
+          <!-- Tarjeta 2: Cerro de Monserrate -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden destination-card-modern">
+              <div class="position-relative" style="height: 240px;">
+                <img src="assets/cerro-monserrate-bogota.webp" class="card-img-top w-100 h-100 object-fit-cover"
+                  alt="Cerro de Monserrate en Bogotá" loading="lazy" />
+                <span class="badge bg-success position-absolute top-0 start-0 m-3 shadow-sm px-3 py-2 rounded-pill">
+                  Cundinamarca
+                </span>
               </div>
-              <div class="mb-3">
-                <label for="contact-email" class="form-label">Correo electrónico</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="contact-email"
-                  name="email"
-                  autocomplete="email"
-                  required
-                />
+              <div class="card-body d-flex flex-column p-4">
+                <h3 class="card-title h4 fw-bold mb-2">Bogotá</h3>
+                <p class="card-text text-muted flex-grow-1">
+                  Vive la cultura capitalina, visita La Candelaria y contempla la ciudad y su arquitectura desde el
+                  histórico cerro de Monserrate.
+                </p>
+                <button type="button" class="btn btn-outline-success rounded-pill fw-semibold mt-3 py-2"
+                  data-bs-toggle="modal" data-bs-target="#destinationModal" data-destination="Bogotá"
+                  data-description="Vive la cultura capitalina, visita La Candelaria y contempla la ciudad y su arquitectura desde el histórico cerro de Monserrate."
+                  data-image="assets/cerro-monserrate-bogota.webp">
+                  Conocer más &rarr;
+                </button>
               </div>
-              <div class="mb-3">
-                <label for="contact-destination" class="form-label">
-                  Destino de interés
-                </label>
-                <select
-                  class="form-select"
-                  id="contact-destination"
-                  name="destination"
-                  required
-                >
-                  <option value="" selected disabled>Elige un destino</option>
-                  <option value="parque-arvi">Parque Arví</option>
-                  <option value="bogota">Bogotá</option>
-                  <option value="barranquilla">Barranquilla</option>
-                  <option value="otro">Otro destino</option>
-                </select>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: Barranquilla -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden destination-card-modern">
+              <div class="position-relative" style="height: 240px;">
+                <img src="assets/carnaval-barranquilla.webp" class="card-img-top w-100 h-100 object-fit-cover"
+                  alt="Carnaval y arquitectura colorida de Barranquilla" loading="lazy" />
+                <span class="badge bg-success position-absolute top-0 start-0 m-3 shadow-sm px-3 py-2 rounded-pill">
+                  Atlántico
+                </span>
               </div>
-              <div class="mb-3">
-                <label for="contact-message" class="form-label">Mensaje</label>
-                <textarea
-                  class="form-control"
-                  id="contact-message"
-                  name="message"
-                  rows="4"
-                  required
-                ></textarea>
+              <div class="card-body d-flex flex-column p-4">
+                <h3 class="card-title h4 fw-bold mb-2">Barranquilla</h3>
+                <p class="card-text text-muted flex-grow-1">
+                  Siente la alegría del Caribe, descubre su exquisita gastronomía y conoce la ciudad que celebra uno de
+                  los carnavales más importantes del mundo.
+                </p>
+                <button type="button" class="btn btn-outline-success rounded-pill fw-semibold mt-3 py-2"
+                  data-bs-toggle="modal" data-bs-target="#destinationModal" data-destination="Barranquilla"
+                  data-description="Siente la alegría del Caribe, descubre su exquisita gastronomía y conoce la ciudad que celebra uno de los carnavales más importantes del mundo."
+                  data-image="assets/carnaval-barranquilla.webp">
+                  Conocer más &rarr;
+                </button>
               </div>
-              <button type="submit" class="btn btn-success">Enviar mensaje</button>
-            </form>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <!-- Footer (Angie - feature/navbar-footer) -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-      <div class="container">
-        <h5 class="fw-bold mb-2">Colombia Viajera</h5>
-        <p class="text-secondary mb-1">Autores: Jesús, Johan, Cristian, Miguel y Angie</p>
-        <p class="text-secondary mb-3">Soporte: soporte@colombiaviajera.com</p>
-        <hr class="border-secondary my-3" />
-        <p class="text-secondary small mb-0">&copy; 2026 Colombia Viajera. Todos los derechos reservados.</p>
       </div>
-    </footer>
+    </section>
 
-    <!-- Modal interactivo de destino (Jesús - feature/contacto-modal) -->
-    <div
-      class="modal fade"
-      id="destinationModal"
-      tabindex="-1"
-      aria-labelledby="destinationModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title fs-5" id="destinationModalTitle"></h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Cerrar"
-            ></button>
-          </div>
-          <div class="modal-body">
+    <!-- Sección Nosotros (Cristian) -->
+    <section id="nosotros" class="about container py-5" aria-labelledby="about-title">
+      <div class="row g-4">
+        <div class="col col-12">
+          <h2 id="about-title">Viajar también es conectar</h2>
+          <p>
+            Colombia Viajera nace con la pasión y el propósito de inspirar a las personas a
+            explorar nuestro territorio de una forma auténtica, accesible y sin
+            complicaciones. Queremos compartir recomendaciones prácticas, consejos
+            locales y rutas sencillas que te permitan descubrir la inmensa diversidad
+            natural, cultural y gastronómica de cada región de nuestro país.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
             <img
-              id="destinationModalImage"
-              class="img-fluid rounded mb-3 w-100"
-              style="max-height: 400px; object-fit: cover;"
-              src=""
-              alt=""
-            />
-            <p id="destinationModalDescription" class="mb-0 text-muted"></p>
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxnIGZpbGw9Im5vbmUiPgoJCTxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyLjE3IDIyLjAxYy01LjEgMC05LjI1LTEuNTctOS4yNS0zLjVjMC0xLjU3IDIuNjgtMi44OSA2LjM4LTMuMzVjLjktLjEgMS43IDIuNTggMi43IDIuNThjLjg1IDAgMS44NC0yLjcgMi42My0yLjYyYzMuOTIuNCA2LjggMS43NyA2LjggMy4zOGMwIDEuOTQtNC4xNCAzLjUxLTkuMjYgMy41MSIgb3BhY2l0eT0iLjIiIC8+CgkJPHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xOC44MiAxNi4yN2MxLjYyLjYzIDIuNiAxLjQ4IDIuNiAyLjQyYzAgMS45NC00LjIxIDMuNTEtOS40MiAzLjUxcy05LjQzLTEuNTctOS40My0zLjVjMC0uOTUgMS0xLjggMi42LTIuNDMiIC8+CgkJPHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02LjI2IDcuNTVjMCAzLjE3IDMuNzYgMTAuMzUgNS43NCAxMC4zNXM1Ljc0LTcuMTggNS43NC0xMC4zNWE1Ljc0IDUuNzQgMCAwIDAtMTEuNDggME0xMiA5Ljg1YTIuNyAyLjcgMCAxIDEgMC01LjM5YTIuNyAyLjcgMCAwIDEgMCA1LjQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iLjIiIC8+CgkJPHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xNC41IDE1LjgzYy0xIDEuMzEtMS41MSAxLjk3LTIuNSAxLjk3Yy0uOTggMC0xLjQ5LS42Ni0yLjUtMS45OGMtMS42Mi0yLjEyLTMuNDUtNS4xNS0zLjQ1LTguMDdhNS45NSA1Ljk1IDAgMSAxIDExLjkgMGMwIDIuOTQtMS44MiA1Ljk2LTMuNDUgOC4wOCIgLz4KCQk8Y2lyY2xlIGN4PSIxMiIgY3k9IjcuNTEiIHI9IjIuODIiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCAxMiA3LjUxKSIgLz4KCTwvZz4KPC9zdmc+Cg=="
+              class="card-img-top w-50 d-block mx-auto" alt="ubicacion">
+            <div class="card-body">
+              <h5 class="card-title">100%</h5>
+              <p class="card-text">Destinos locales</p>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              Cerrar
-            </button>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41Ij4KCQk8Y2lyY2xlIGN4PSI4LjUiIGN5PSI3LjI1IiByPSIzIiAvPgoJCTxwYXRoIGQ9Ik0zIDIxLjI1VjE4YTUuNSA1LjUgMCAwIDEgMTEgMHYzLjI1Wk0xMy4yNSAxNWw0LjI1LTIuMjVtMCA4LjV2LTE1bS40NS0zLjI5bDIuODUgMS4zM3EuNDUuMjEgMCAuNDJsLTIuODUgMS4zM3EtLjQ1LjIxLS40NS0uMjl2LTIuNXEwLS41LjQ1LS4yOSIgLz4KCTwvZz4KPC9zdmc+Cg=="
+              class="card-img-top w-50 d-block mx-auto" alt="guias">
+            <div class="card-body">
+              <h5 class="card-title">Guías</h5>
+              <p class="card-text">Guías certificados</p>
+            </div>
           </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+Cgk8cGF0aCBkPSJNMCAwaDUxMnY1MTJIMHoiIGZpbGw9Im5vbmUiIC8+Cgk8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0zODkuMDUzIDEyNi4zQTMwMi45IDMwMi45IDAgMCAwIDI4MC4wMTIgMTguMTVMMjcyIDEzLjUxNmwtOC4wMTIgNC42MzRBMzAxLjA4IDMwMS4wOCAwIDAgMCAxMTMuNCAyNzkuMDQyYzAgMy40NDUuMDYgNi45NDQuMTc3IDEwLjRjMS41OTIgNDYuODU2IDE5LjUxMSA4Ni4yODMgNTEuODIgMTE0LjAxOGMyNC43MjQgMjEuMjI1IDU2LjQzOCAzNC4xODIgOTAuNjA3IDM3LjI3M1Y0OTZoMzJWMjQwSDI1NnYxNjguNTI4Yy01NC4wNjQtNi4yNjMtMTA3Ljg3My00NC40NTUtMTEwLjQ0NC0xMjAuMTc0Yy0uMTA2LTMuMDk1LS4xNi02LjIyOC0uMTYtOS4zMTJBMjcwLjI5IDI3MC4yOSAwIDAgMSAyNzIgNTAuNjczYTI3MC4yOSAyNzAuMjkgMCAwIDEgMTI2LjYgMjI4LjM2OWMwIDMuMDg0LS4wNTQgNi4yMTctLjE2IDkuMzEzYy0yLjA1NiA2MC41NzMtMzYuOTA3IDk3LjEyNy03OC40NDQgMTEyLjUzNnYzMy44NjdhMTU2LjIgMTU2LjIgMCAwIDAgNTguNjA3LTMxLjNjMzIuMzA5LTI3LjczNSA1MC4yMjgtNjcuMTYyIDUxLjgyLTExNC4wMTdjLjExNy0zLjQ1Ni4xNzctNi45NTUuMTc3LTEwLjRBMzAwLjk1IDMwMC45NSAwIDAgMCAzODkuMDUzIDEyNi4zIiAvPgo8L3N2Zz4K"
+              class="card-img-top w-50 d-block mx-auto" alt="sostenible">
+            <div class="card-body">
+              <h5 class="card-title">Sostenibles</h5>
+              <p class="card-text">Ecológicamente responsables</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de Contacto (Jesús - feature/contacto-modal) -->
+    <section id="contacto" class="container py-5 border-top" aria-labelledby="contact-title">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="text-center mb-4">
+            <p class="eyebrow">Planea tu próxima aventura</p>
+            <h2 id="contact-title" class="display-6 fw-bold">Contáctanos</h2>
+            <p class="text-muted">
+              Cuéntanos qué viaje tienes en mente y te ayudaremos a encontrar
+              información para comenzar a planearlo.
+            </p>
+          </div>
+
+          <form>
+            <div class="mb-3">
+              <label for="contact-name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="contact-name" name="name" autocomplete="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="contact-email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="contact-email" name="email" autocomplete="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="contact-destination" class="form-label">
+                Destino de interés
+              </label>
+              <select class="form-select" id="contact-destination" name="destination" required>
+                <option value="" selected disabled>Elige un destino</option>
+                <option value="parque-arvi">Parque Arví</option>
+                <option value="bogota">Bogotá</option>
+                <option value="barranquilla">Barranquilla</option>
+                <option value="otro">Otro destino</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="contact-message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="contact-message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (Angie - feature/navbar-footer) -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <h5 class="fw-bold mb-2">Colombia Viajera</h5>
+      <p class="text-secondary mb-1">Autores: Jesús, Johan, Cristian, Miguel y Angie</p>
+      <p class="text-secondary mb-3">Soporte: soporte@colombiaviajera.com</p>
+      <hr class="border-secondary my-3" />
+      <p class="text-secondary small mb-0">&copy; 2026 Colombia Viajera. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal interactivo de destino (Jesús - feature/contacto-modal) -->
+  <div class="modal fade" id="destinationModal" tabindex="-1" aria-labelledby="destinationModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="destinationModalTitle"></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img id="destinationModalImage" class="img-fluid rounded mb-3 w-100"
+            style="max-height: 400px; object-fit: cover;" src="" alt="" />
+          <p id="destinationModalDescription" class="mb-0 text-muted"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Cerrar
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Javascript personalizado -->
-    <script src="app.js" defer></script>
-  </body>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Javascript personalizado -->
+  <script src="app.js" defer></script>
+</body>
+
 </html>
